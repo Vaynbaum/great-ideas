@@ -49,7 +49,6 @@ There will be a transition to the main page, which contains brief information ab
 The Ideas page contains a form for adding a new idea, a field for filtering ideas and the ideas themselves, which can be changed or deleted by clicking on the appropriate buttons.
 
 <img width="410" alt="image" src="https://user-images.githubusercontent.com/78900834/180063033-8c808bf8-be71-4748-b301-d2f7f7f852b8.png">
-<img width="412" alt="image" src="https://user-images.githubusercontent.com/78900834/180063081-6166941c-3824-47c5-814e-56b9f5275ef6.png">
 
 The "Bonus Store" page contains a list of products and a field for filtering them. When you click on the card,
 the element will open this element separately. After that, you can buy this product for points or go back to the entire list of bonuses.
@@ -64,3 +63,24 @@ By clicking on the profile in the left corner, you can get a drop-down list cons
 On the user data editing page, it is possible to change the surname, first name, place of residence and password.
 
 <img width="421" alt="image" src="https://user-images.githubusercontent.com/78900834/180063745-b7159669-d4b0-484f-854c-5fd5eabf4785.png">
+
+## Technologies in the project
+Frontend-part of the application is written using the Angular framework.
+
+Backend-the part of the application that allows you to upload photos is written using the Express framework.
+
+## How to start
+After downloading the project, you need to install the dependencies 
+In the folders for frontend and for serverUnloadImg
+
+>npm install
+
+To run `frontend`, you need to write the command
+
+>npm run dev
+
+To run `serverUnloadImg`, you need to write the command
+
+>npm run server
+
+Open your browser at http://localhost:4200/
