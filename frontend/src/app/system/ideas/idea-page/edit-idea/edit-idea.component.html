@@ -1,0 +1,86 @@
+<section class="recordIdea" *ngIf="idea">
+  <app-top-panel *ngIf="showTopPanel"></app-top-panel>
+  <app-panel
+    [idea]="idea"
+    colorText="#962715"
+    [buttons]="btns"
+    (onClickButton)="clickToButton($event)"
+  >
+  </app-panel>
+  <app-title value="Изменить идею"></app-title>
+  <form class="recordIdea-form" #f="ngForm">
+    <div
+      class="recordIdea-form--group"
+      [ngClass]="{ 'has-error': name.invalid && name.touched }"
+    >
+      <input
+        [ngModel]="idea.name"
+        type="text"
+        class="recordIdea-form--group---control"
+        placeholder="Название идеи"
+        ngModel
+        name="name"
+        #name="ngModel"
+        required
+      />
+
+      <div
+        class="recordIdea-form--group---help"
+        class="form-help-text"
+        *ngIf="name.invalid && name.touched"
+      >
+        <span> Поле обязательно для заполнения </span>
+      </div>
+    </div>
+    <div
+      class="recordIdea-form--group"
+      [ngClass]="{ 'has-error': description.invalid && description.touched }"
+    >
+      <textarea
+        [ngModel]="idea.description"
+        class="form-control"
+        placeholder="Описание идеи"
+        ngModel
+        name="description"
+        #description="ngModel"
+        required
+        cols="65"
+        rows="5"
+      >
+      </textarea>
+      <div
+        class="recordIdea-form--group---help"
+        class="form-help-text"
+        *ngIf="description.invalid && description.touched"
+      >
+        <span>Поле обязательно для заполнения</span>
+      </div>
+    </div>
+    <app-image [url]="getUrlImg(idea.imgUrl)" widthImage="100%"></app-image>
+    <div class="recordIdea-form--group">
+      <div class="recordIdea-form--group---btn" (click)="onOpenFileDialog()">
+        <img
+          class="recordIdea-form--group---btn----img"
+          src="../../../../../assets/img/uploadImg.png"
+        />
+        <button class="recordIdea-form--group---btn----btn">
+          Изменить фотографию
+        </button>
+      </div>
+      <input
+        id="edit-img"
+        class="recordIdea-form--group---file"
+        type="file"
+        (change)="fileChange($event)"
+        accept=".jpg, .jpeg, .png, .gif, .bmp"
+      />
+    </div>
+    <button
+      (click)="editIdea(f)"
+      class="recordIdea-form--btn btn"
+      [disabled]="f.invalid"
+    >
+      Сохранить
+    </button>
+  </form>
+</section>

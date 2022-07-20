@@ -1,0 +1,21 @@
+<div class="card_stat">
+  <ng-container *ngIf="statistics">
+    <div *ngFor="let statistic of statistics" class="card_stat-item">
+      <div>
+        <span>{{ statistic.val }}</span>
+      </div>
+      <div>
+        {{ statistic.str }}
+      </div>
+    </div>
+  </ng-container>
+
+  <div *ngIf="statistic" class="card_stat-item">
+    <div>
+      <span>{{ statistic.val }}</span>
+    </div>
+    <div>
+      {{ statistic.str }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+@import "../../styles.scss";
+.contaier-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: $offset;
+  row-gap: $offset;
+}

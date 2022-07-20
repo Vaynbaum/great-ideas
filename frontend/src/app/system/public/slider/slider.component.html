@@ -1,0 +1,8 @@
+<div class="slider">
+    <div class="slide-track">
+        <div class="slide" *ngFor="let description of descriptions">
+            <img [src]="description.url" alt="" />
+            <p>{{description.text}}</p>
+        </div>
+    </div>
+</div>

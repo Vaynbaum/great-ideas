@@ -1,0 +1,15 @@
+@import "../../styles.scss";
+.btn {
+  font-size: $fontSizeButton;
+  color: $colorWhite;
+  width: auto;
+  padding: $paddingBtn;
+  background: $colorRed;
+  border: none;
+  cursor: pointer;
+  border-radius: $borderRadius;
+}
+.btn[disabled] {
+  cursor: no-drop;
+  background-color: #9626157c;
+}

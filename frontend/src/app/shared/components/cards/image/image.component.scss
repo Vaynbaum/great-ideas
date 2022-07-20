@@ -1,0 +1,7 @@
+@import "../../../../../styles.scss";
+img {
+  border-radius: $borderRadius;
+}
+img:hover{
+  cursor: pointer;
+}

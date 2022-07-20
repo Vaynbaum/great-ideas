@@ -1,0 +1,28 @@
+@import "../../../../styles.scss";
+@import "../../../../assets/styles/input.scss";
+.form-group {
+  .input-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    input {
+      width: 4%;
+    }
+    label {
+      font-size: 14px;
+      width: 96%;
+    }
+    .form-control {
+      outline: none;
+      font-size: $fontSize;
+    }
+
+    .form-control,
+    .form-control:focus {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid #d3d3d3;
+    }
+  }
+}

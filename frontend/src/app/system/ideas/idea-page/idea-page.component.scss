@@ -1,0 +1,74 @@
+@import "../../../../assets/styles/container.scss";
+@import "../../../../assets/styles/button.scss";
+@import "../../../../assets/styles/header.scss";
+@import "../../../../assets/styles/alert.scss";
+@import "../../../../assets/styles/input.scss";
+@import "../../../../styles.scss";
+.recordIdea,
+.recordIdea-form {
+  display: flex;
+  flex-direction: column;
+}
+.recordIdea,
+.recordIdea-form--alert---success,
+.recordIdea-form--alert---danger {
+  border-radius: $borderRadius;
+  padding: $offset;
+}
+
+.recordIdea,
+.recordIdea-form,
+.recordIdea-form--group {
+  row-gap: $offset;
+}
+
+.recordIdea {
+  background-color: $colorWhite;
+  width: 510px;
+  box-shadow: 0 3px 50px 0 rgba(0, 0, 0, 0.1);
+  .recordIdea-header {
+    text-align: center;
+  }
+  .recordIdea-form {
+    .recordIdea-form--group {
+      .recordIdea-form--group---control {
+      }
+      .recordIdea-form--group---btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 5px;
+        background-color: $colorRed;
+        padding: $paddingBtn;
+        border-radius: $borderRadius;
+        cursor: pointer;
+        width: 211px;
+        margin: auto;
+
+        .recordIdea-form--group---btn----img {
+          width: $sizeImgSign;
+          height: $sizeImgSign;
+        }
+        .recordIdea-form--group---btn----btn {
+          border: none;
+          color: $colorWhite;
+          background-color: $colorRed;
+          cursor: pointer;
+          font-size: $fontSize;
+        }
+      }
+      .recordIdea-form--group---file {
+        display: none;
+      }
+    }
+    .recordIdea-form--btn {
+      width: auto;
+      margin: auto;
+    }
+  }
+}
+.recordIdea-form--btn {
+  margin: auto;
+  width: auto;
+}

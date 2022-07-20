@@ -1,0 +1,8 @@
+.item-card {
+  width: $widthCard;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: $offset;
+  row-gap: $offset;
+}

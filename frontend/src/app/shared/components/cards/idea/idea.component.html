@@ -1,0 +1,16 @@
+<div class="card idea_card" *ngIf="idea">
+  <app-top-panel *ngIf="showTopPanel"></app-top-panel>
+
+  <app-panel
+    (onClickButton)="clickToButton($event)"
+    [idea]="idea"
+    [buttons]="btns"
+    [colorText]="colorText"
+  >
+  </app-panel>
+  <app-title [value]="idea?.name"></app-title>
+  <div class="separator"></div>
+  <p class="idea_card-description">{{ idea?.description }}</p>
+  <app-image [url]="getUrlImg(idea.imgUrl)" widthImage="100%"></app-image>
+  <div class="separator"></div>
+</div>

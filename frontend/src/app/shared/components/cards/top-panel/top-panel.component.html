@@ -1,0 +1,13 @@
+<div class="top_panel">
+  <button
+    *ngFor="let toggle of toggles"
+    (click)="change(toggle)"
+    class="top_panel-btn"
+    [ngClass]="{
+      clicked: toggle.mode == mode,
+      unclicked: toggle.mode != mode
+    }"
+  >
+    {{ toggle.name }}
+  </button>
+</div>

@@ -1,0 +1,9 @@
+<div class="profile" [ngStyle]="Style">
+  <img [src]="url" />
+  <div class="profile-nameDate">
+    <a class="profile-nameDate--name">{{ fullname }}</a>
+    <div class="profile-nameDate--date" *ngIf="date">
+      {{ date | date: "dd.MM.yyyy" }}
+    </div>
+  </div>
+</div>

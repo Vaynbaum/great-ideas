@@ -1,0 +1,21 @@
+<div class="contaier-component item_page">
+  <div class="card item_card" *ngIf="item">
+    <app-title [value]="item?.typeItem?.name"></app-title>
+    <div class="separator"></div>
+    <p class="item_card-description">
+      {{ item?.typeItem?.description }}
+    </p>
+    <app-image
+      [url]="getUrlImg(item?.typeItem?.imgUrl)"
+      widthImage="100%"
+    ></app-image>
+    <div class="separator"></div>
+    <div class="card_stat">
+      <button (click)="back()" class="btn">Назад</button>
+      <app-statistic [statistics]="stats"></app-statistic>
+
+      <button (click)="buy()" class="btn">Купить</button>
+    </div>
+  </div>
+</div>
+<section class="page_loading" *ngIf="!isLoaded">Загрузка...</section>

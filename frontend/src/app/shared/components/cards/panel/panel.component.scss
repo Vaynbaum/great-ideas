@@ -1,0 +1,18 @@
+@import "../../../../../assets/styles/dropdowm.scss";
+
+.panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  .close .dropdown {
+    display: none;
+  }
+  .panel-btn_group {
+    cursor: pointer;
+    img {
+      width: 20px;
+    }
+  }
+}

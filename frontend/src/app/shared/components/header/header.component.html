@@ -1,0 +1,48 @@
+<header>
+  <div class="header-btns_group">
+    <a [routerLink]="['/system']" class="main">
+      <img src="../../../../assets/img/Logo.png" />
+    </a>
+
+    <div class="btn_link-wrapper">
+      <ng-container *ngFor="let link of links">
+        <app-link
+          [text]="link.text"
+          [urlWhite]="link.urlWhite"
+          [urlRed]="link.urlRed"
+          [link]="link.link"
+          [reverse]="false"
+          [queryParams]="link.queryParams"
+        ></app-link
+      ></ng-container>
+    </div>
+
+    <div appDirectiveDropDown>
+      <app-info-profile
+        [fullname]="user.name"
+        [url]="user.url"
+      ></app-info-profile>
+
+      <div class="dropdown">
+        <ng-container *ngFor="let link of profileLinks">
+          <app-link
+            [text]="link.text"
+            [urlWhite]="link.urlWhite"
+            [urlRed]="link.urlRed"
+            [link]="link.link"
+            [reverse]="true"
+          ></app-link
+        ></ng-container>
+
+        <!-- Exit -->
+        <app-link
+          [text]="exit.text"
+          [urlWhite]="exit.urlWhite"
+          [urlRed]="exit.urlRed"
+          [reverse]="true"
+          (click)="logout()"
+        ></app-link>
+      </div>
+    </div>
+  </div>
+</header>

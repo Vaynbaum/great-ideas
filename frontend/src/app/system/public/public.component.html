@@ -1,0 +1,49 @@
+<section class="contaier-component main_page">
+  <div class="card main_page-card">
+    <div class="main_page-card--panel">
+      <app-info-profile
+        url="../../../assets/img/Logo.png"
+        fullname="Отличные идеи"
+        colorText="#962715"
+        [date]="currentDate"
+      ></app-info-profile>
+    </div>
+    <app-title [value]="projectDescription.title"> </app-title>
+    <div class="separator"></div>
+    <p class="main_page-card--description">
+      {{ projectDescription.content }}
+    </p>
+    <app-image [url]="projectDescription.url" widthImage="100%"></app-image>
+    <div class="separator"></div>
+  </div>
+
+  <div class="card main_page-card">
+    <div class="main_page-card--panel">
+      <app-info-profile
+        url="../../../assets/img/Logo.png"
+        fullname="Отличные идеи"
+        colorText="#962715"
+        [date]="currentDate"
+      ></app-info-profile>
+    </div>
+    <app-title value="Информация"> </app-title>
+    <div class="separator"></div>
+    <app-slider></app-slider>
+    <div class="separator"></div>
+  </div>
+
+  <div class="card main_page-card">
+    <div class="main_page-card--panel">
+      <app-info-profile
+        url="../../../assets/img/Logo.png"
+        fullname="Отличные идеи"
+        colorText="#962715"
+        [date]="currentDate"
+      ></app-info-profile>
+    </div>
+    <app-title value="Статистика"> </app-title>
+    <div class="separator"></div>
+    <app-chart [charts]="charts"> </app-chart>
+    <div class="separator"></div>
+  </div>
+</section>

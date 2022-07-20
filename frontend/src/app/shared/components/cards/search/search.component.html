@@ -1,0 +1,25 @@
+<div class="panel_search card" *ngIf="filters[0]">
+  <img src="../../../../../assets/img/SearchImg.png" />
+  <input
+    [placeholder]="currentFilter.placeholder"
+    [(ngModel)]="currentFilter.value"
+    class="panel_search-control"
+    [type]="currentFilter.type"
+    (change)="changeCriteria(currentFilter.value)"
+  />
+
+  <div class="panel_search-btn_group" appDirectiveDropDown>
+    <button class="btn panel_search-btn_group--btn_toggle">
+      {{ currentFilter.placeholder }} ▼
+    </button>
+    <div class="dropdown panel_search-btn_group--dropdown_menu">
+      <app-link
+        *ngFor="let filter of filters"
+        (click)="changeCriteria(filter.field)"
+        [text]="filter.placeholder"
+        [reverse]="true"
+      >
+      </app-link>
+    </div>
+  </div>
+</div>

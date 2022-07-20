@@ -1,0 +1,24 @@
+@import "../../../../styles.scss";
+@import "../../../shared/components/cards/card.scss";
+@import "../../../../assets/styles/separator.scss";
+@import "../../../../assets/styles/button.scss";
+@import "../../../../assets/styles/container.scss";
+.item_page {
+  .item_card {
+    width: 400px;;
+    .item_card-description {
+      width: 100%;
+      white-space: pre-line;
+      text-align: left;
+    }
+    .card_stat {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      app-statistic{
+        width: 100%;
+      }
+    }
+  }
+}

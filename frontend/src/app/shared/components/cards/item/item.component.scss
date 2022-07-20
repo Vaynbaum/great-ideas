@@ -1,0 +1,21 @@
+@import "../../../../../assets/styles/separator.scss";
+@import "../card.scss";
+$widthItem: 247px;
+.card-item {
+  width: $widthItem;
+  height: 380px;
+  cursor: pointer;
+  justify-content: flex-end;
+  .card-item--img {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+  }
+
+  .card-item--panel {
+    color: $colorRed;
+  }
+}

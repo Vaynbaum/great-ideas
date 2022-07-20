@@ -1,0 +1,28 @@
+<div class="panel">
+  <app-info-profile
+    [url]="getUrlImg(idea?.user.url)"
+    [fullname]="getAuthor(idea?.user)"
+    [date]="idea?.date"
+    [colorText]="colorText"
+  >
+  </app-info-profile>
+  <div
+    class="panel-btn_group"
+    appDirectiveDropDown
+    *ngIf="canEdit(idea?.userId)"
+  >
+    <img src="../../../../../assets/img/Hamburger Menu.png" alt="" />
+    <div class="dropdown">
+      <ng-container *ngFor="let btn of buttons; index as i">
+        <app-link
+          (click)="clickToBtn(i)"
+          [urlWhite]="btn.urlWhite"
+          [urlRed]="btn.urlRed"
+          [text]="btn.text"
+          [reverse]="reverse"
+        >
+        </app-link>
+      </ng-container>
+    </div>
+  </div>
+</div>

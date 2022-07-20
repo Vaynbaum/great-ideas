@@ -1,0 +1,67 @@
+@import "../../../../styles.scss";
+$animationSpeed: 60s;
+$widthSlide: 275px;
+$sizeImg: 100px;
+@mixin white-gradient {
+  background: linear-gradient(to right, $colorWhite 0%, $colorBlack 100%);
+}
+
+// Animation
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-#{$widthSlide} * 4));
+  }
+}
+
+// Styling
+.slider {
+  border-radius: $borderRadius;
+  background: $colorWhite;
+  overflow: hidden;
+  position: relative;
+  width: $widthCard;
+
+  &::before,
+  &::after {
+    @include white-gradient;
+    content: "";
+    height: 500px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  &::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+
+  &::before {
+    left: 0;
+    top: 0;
+  }
+
+  .slide-track {
+    animation: scroll $animationSpeed linear infinite;
+    display: flex;
+    column-gap: $offset;
+    width: calc(#{$widthSlide} * 8);
+  }
+
+  .slide {
+    width: $widthSlide;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: $offset;
+
+    img {
+      height: $sizeImg;
+      width: $sizeImg;
+    }
+  }
+}

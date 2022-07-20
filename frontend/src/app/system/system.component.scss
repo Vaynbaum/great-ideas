@@ -1,0 +1,12 @@
+@import "../../styles.scss";
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  background: $colorGray;
+  margin-top: $heightHeader;
+  margin-bottom: $offset;
+}

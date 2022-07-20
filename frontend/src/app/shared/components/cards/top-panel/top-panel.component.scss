@@ -1,0 +1,23 @@
+@import "../card.scss";
+
+.top_panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: $offset;
+
+  .top_panel-btn {
+    font-size: $fontSizeButton;
+    background: $colorWhite;
+    color: $colorRed;
+    cursor: pointer;
+  }
+}
+.unclicked {
+  border: none;
+}
+.clicked {
+  border: none;
+  border-bottom: 1px solid $colorRed;
+}

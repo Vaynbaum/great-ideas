@@ -1,0 +1,30 @@
+@import "../../assets/styles/form.scss";
+$colorLinkText:#96a2b2;
+main {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-links {
+  text-align: center;
+  font-size: 13px;
+  color: $colorLinkText;
+  a {
+    color: $colorLinkText;
+    opacity: 0.8;
+  }
+  a:hover {
+    color: $colorRed;
+    opacity: 1;
+  }
+}
+
+.login-links:after {
+  content: "";
+  display: table;
+  clear: both;
+}

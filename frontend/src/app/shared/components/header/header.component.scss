@@ -1,0 +1,50 @@
+@import "../../../../styles.scss";
+@import "../../../../assets/styles/dropdowm.scss";
+
+header {
+  width: 100vw;
+  height: $heightHeader;
+
+  position: fixed;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: $colorRed;
+
+  a {
+    font-size: $fontSizeText;
+    color: $colorWhite;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  img {
+    width: $sizeImgSign;
+    height: $sizeImgSign;
+  }
+
+  .header-btns_group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: $offset;
+    .main img {
+      height: $heightHeader;
+      width: auto;
+    }
+    .btn_link-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      column-gap: $offset;
+    }
+  }
+}
+
+.dropdown {
+  top: $heightHeader;
+}

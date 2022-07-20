@@ -1,0 +1,27 @@
+@import "../../../styles.scss";
+@import "../../../assets/styles/container.scss";
+@import "../../shared/components/cards/card.scss";
+@import "../../../assets/styles/separator.scss";
+@import "../../../assets/styles/loading.scss";
+
+.page_idea {
+  nav {
+    ul {
+      display: flex;
+      column-gap: $offset;
+      margin: 0;
+      padding: 0;
+      li {
+        list-style-type: none;
+        padding: calc(#{$offset}/ 2);
+        border-radius: $borderRadius;
+        color: $colorRed;
+      }
+      .hover {
+        background: $colorRed;
+        color: $colorWhite;
+        cursor: pointer;
+      }
+    }
+  }
+}

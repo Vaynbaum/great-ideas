@@ -1,0 +1,11 @@
+@import "../../../../styles.scss";
+$height: 60px;
+
+footer {
+  height: $height;
+  background-color: $colorRed;
+  color: $colorWhite;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

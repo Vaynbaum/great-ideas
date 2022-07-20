@@ -1,0 +1,27 @@
+@import "../../../../../styles.scss";
+@import "../../../../../assets/styles/input.scss";
+@import "../../../../../assets/styles/button.scss";
+@import "../../../../../assets/styles/dropdowm.scss";
+@import "../card.scss";
+$widthDropdown: 110px;
+.panel_search {
+  column-gap: $sizeGap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  img {
+    width: $sizeImgSign;
+  }
+  .panel_search-control {
+    width: 70%;
+    border: none;
+  }
+  .panel_search-btn_group {
+    .panel_search-btn_group--btn_toggle {
+      width: $widthDropdown;
+    }
+    .panel_search-btn_group--dropdown_menu {
+      width: $widthDropdown;
+    }
+  }
+}

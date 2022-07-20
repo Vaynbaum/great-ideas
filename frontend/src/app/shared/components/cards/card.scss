@@ -1,0 +1,24 @@
+@import "../../../../styles.scss";
+$heightImg: 160px;
+.card {
+  padding: $offset;
+  width: $widthCard;
+  background-color: $colorWhite;
+  border-radius: $borderRadius;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 3px 50px 0 rgba(0, 0, 0, 0.1);
+  row-gap: $offset;
+}
+
+.content {
+  column-gap: $offset;
+  display: flex;
+  justify-content: center;
+  font-size: $fontSizeText;
+}
+
+.charts {
+  margin: $offset;
+}

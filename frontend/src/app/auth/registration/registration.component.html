@@ -1,0 +1,34 @@
+<div class="block">
+  <app-title value="Регистрация"></app-title>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <app-textarea
+      *ngFor="let input of inputs"
+      [type]="input.type"
+      [placeholder]="input.placeholder"
+      [formControlName]="input.field"
+      [formConrol]="form.get(input.field)"
+      [messageErorFunc]="input.messageError"
+    >
+    </app-textarea>
+    <app-checkbox
+      [formConrol]="form.get(checkBox.field)"
+      [type]="checkBox.type"
+      [placeholder]="checkBox.placeholder"
+      [formControlName]="checkBox.field"
+      [label]="checkBox.label"
+      [messageErorFunc]="checkBox.messageError"
+    >
+    </app-checkbox>
+
+    <div class="btn-wrapper">
+      <button [disabled]="form.invalid" class="btn">Зарегистрироваться</button>
+    </div>
+  </form>
+</div>
+<div class="login-links">
+  <p class="text-center">
+    Есть аккаунт?
+    <a class="txt-brand" routerLink="/auth/login"> Войдите! </a>
+  </p>
+</div>

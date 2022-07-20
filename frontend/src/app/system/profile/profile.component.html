@@ -1,0 +1,37 @@
+<section *ngIf="isLoaded" class="contaier-component profile_page">
+  <section class="card profile_page-card--img">
+    <app-image
+      (clickImg)="onOpenFileDialog()"
+      [url]="displayUser.url"
+      widthImage="200px"
+    >
+    </app-image>
+    <input
+      (change)="fileChange($event)"
+      id="file-input"
+      accept=".jpg, .jpeg, .png, .gif, .bmp"
+      class="profile_page-card--img---file"
+      type="file"
+    />
+  </section>
+
+  <div class="block_info">
+    <section class="card profile_page-card--info">
+      <app-title [value]="displayUser.fullname"> </app-title>
+      <app-statistic [statistics]="displayUser.stat"></app-statistic>
+      <div class="separator"></div>
+      <app-statistic [statistics]="displayUser.info"></app-statistic>
+      <button class="btn" (click)="deleteProfile()">Удалить аккаунт</button>
+    </section>
+    <div class="item-card">
+      <app-item
+        *ngFor="let purchas of purchases"
+        [purchas]="purchas.item"
+        [number]="purchas.number"
+        name="количество"
+      >
+      </app-item>
+    </div>
+  </div>
+</section>
+<section class="page_loading" *ngIf="!isLoaded">Загрузка...</section>

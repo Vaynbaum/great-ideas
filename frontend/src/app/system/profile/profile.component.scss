@@ -1,0 +1,29 @@
+@import "../../../assets/styles/container.scss";
+@import "../../../assets/styles/separator.scss";
+@import "../../shared/components/cards/card.scss";
+@import "../../../assets/styles/button.scss";
+@import "../../../assets/styles/item-page.scss";
+.profile_page {
+  min-height: 86vh;
+  flex-direction: row;
+  align-items: start;
+  column-gap: $offset;
+  justify-content: center;
+  .profile_page-card--img {
+    width: auto;
+    .profile_page-card--img---file {
+      display: none;
+    }
+  }
+  .block_info {
+    display: flex;
+    flex-direction: column;
+    row-gap: $offset;
+    .profile_page-card--info {
+      app-statistic {
+        width: 100%;
+      }
+      row-gap: 18px;
+    }
+  }
+}

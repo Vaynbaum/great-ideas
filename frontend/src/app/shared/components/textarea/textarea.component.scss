@@ -1,0 +1,22 @@
+@import "../../../../styles.scss";
+@import "../../../../assets/styles/input.scss";
+.form-group {
+  .input-group {
+    .form-control {
+      outline: none;
+      font-size: $fontSize;
+    }
+    label {
+      font-size: 12px;
+      padding-left: $paddindLeft;
+      color: $colorRed;
+    }
+  }
+
+  .form-control,
+  .form-control:focus {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #d3d3d3;
+  }
+}

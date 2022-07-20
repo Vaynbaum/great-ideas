@@ -1,0 +1,16 @@
+@import "../../../assets/styles/container.scss";
+@import "../../../assets/styles/separator.scss";
+@import "../../shared/components/cards/card.scss";
+.main_page {
+  .main_page-card {
+    .main_page-card--description{
+      white-space: pre-line;
+    }
+    .main_page-card--panel {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+}

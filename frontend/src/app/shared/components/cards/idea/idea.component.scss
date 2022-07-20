@@ -1,0 +1,14 @@
+@import "../../../../../assets/styles/container.scss";
+@import "../../../../../styles.scss";
+@import "../card.scss";
+@import "../../../../../assets/styles/separator.scss";
+.idea_card {
+  width: $widthCard;
+  .idea_card-description {
+    width: 100%;
+    white-space: pre-line;
+  }
+  app-panel {
+    width: 100%;
+  }
+}

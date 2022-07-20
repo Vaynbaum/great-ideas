@@ -1,0 +1,23 @@
+<div class="contaier-component edit_profile_page">
+  <div class="block">
+    <app-title value="Изменить данные"></app-title>
+    <div class="alert-{{ message.type }}" *ngIf="message.text">
+      {{ message.text }}
+    </div>
+    <form [formGroup]="form">
+      <app-textarea
+        *ngFor="let input of inputs"
+        [type]="input.type"
+        [placeholder]="input.placeholder"
+        [formControlName]="input.field"
+        [formConrol]="form.get(input.field)"
+        [messageErorFunc]="input.messageError"
+        [label]="input.placeholder"
+      >
+      </app-textarea>
+    </form>
+    <button (click)="onSubmit()" class="btn" [disabled]="!form.valid">
+      Сохранить изменения
+    </button>
+  </div>
+</div>

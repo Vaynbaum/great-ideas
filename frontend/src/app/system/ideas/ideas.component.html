@@ -1,0 +1,28 @@
+<section class="contaier-component page_idea" *ngIf="isLoaded">
+  <app-add-idea (onIdeaAdd)="newIdeaAdded($event)"></app-add-idea>
+  <app-search [filters]="filters" (onFilter)="filter($event)"></app-search>
+  <ng-container
+    *ngFor="
+      let item of ideas
+        | appfilter: filterIdea:id
+        | appFilter: filterValue.value:filterValue.field;
+      first as isFirst
+    "
+  >
+    <app-edit-idea
+      [showTopPanel]="isFirst"
+      *ngIf="isEditing && item == ideaEditing"
+      [idea]="ideaEditing"
+      (onIdeaEdit)="IdeaWasEdited($event)"
+      (cancel)="cancel($event)"
+    ></app-edit-idea>
+    <app-idea
+      [showTopPanel]="isFirst"
+      *ngIf="item != ideaEditing"
+      [idea]="item"
+      (onEditClick)="editIdea($event)"
+      (onDeleteClick)="deleteIdea($event)"
+    ></app-idea>
+  </ng-container>
+</section>
+<section class="page_loading" *ngIf="!isLoaded">Загрузка...</section>

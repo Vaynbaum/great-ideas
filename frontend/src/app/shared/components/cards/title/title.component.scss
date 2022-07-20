@@ -1,0 +1,10 @@
+@import "../../../../../styles.scss";
+.title {
+  width: 100%;
+  text-align: center;
+  span {
+    font-size: $sizeHeader;
+    font-weight: bold;
+    color: $colorRed;
+  }
+}

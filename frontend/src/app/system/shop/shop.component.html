@@ -1,0 +1,22 @@
+<section *ngIf="isLoaded && !showOnlyPage" class="contaier-component shop_page">
+  <app-search [filters]="filters" (onFilter)="filter($event)"></app-search>
+  <div class="item-card shop_page-card">
+    <app-item
+      *ngFor="
+        let item of items | appFilter: filterValue.value:filterValue.field
+      "
+      (click)="clickItem(item)"
+      [purchas]="item"
+      [number]="item.price"
+      name="цена"
+    >
+    </app-item>
+  </div>
+</section>
+<section class="page_loading" *ngIf="!isLoaded">Загрузка...</section>
+<app-item-page
+  (onBuy)="onBuy($event)"
+  (onbBack)="onBack()"
+  [itemId]="currentItemId"
+  *ngIf="showOnlyPage"
+></app-item-page>

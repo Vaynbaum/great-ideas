@@ -1,0 +1,52 @@
+$colorWhite: #fff;
+$colorRed: #962715;
+$colorGray: #dfe2e2;
+$colorLightBlack: #1e1e2050;
+$colorBlack: #000000;
+$borderRadius: 4px;
+$offset: 15px;
+$heightHeader: 60px;
+$sizeHeader: 20px;
+$widthProfileImg: 45px;
+$paddingBtn: 10px;
+$fontSizeText: 16px;
+$fontSizeButton: 16px;
+$sizeImgSign: 16px;
+$sizeGap: 10px;
+$widthCard: 510px;
+$secondsTransition: 300ms;
+
+@font-face {
+  font-family: "Segoe UI Regular";
+  src: url("assets/fonts/SegoeUI.eot");
+  src: url("assets/fonts/SegoeUI.eot?#iefix") format("embedded-opentype"),
+    url("assets/fonts/SegoeUI.woff") format("woff"),
+    url("assets/fonts/SegoeUI.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI Regular";
+}
+
+div,
+p,
+input,
+textarea {
+  font-weight: 400;
+  line-height: 22px;
+  font-size: $fontSizeText;
+}
+
+body {
+  height: 100vh;
+  background-color: $colorGray;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,13 @@
+.card_stat {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  .card_stat-item {
+    text-align: center;
+    span {
+      font-weight: bold;
+      color: #bd4330;
+    }
+  }
+}
