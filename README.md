@@ -6,8 +6,7 @@ The application is designed to express their `initiatives` for the improvement o
 Provides the user with the ability to `add`, `modify` and `delete` their ideas, as well as `filter by field values`. 
 For `more motivation`, points are awarded for added ideas, which can be exchanged for `sponsored goods`.
 
-![Logo](https://user-images.githubusercontent.com/78900834/180047789-a53daa86-2da8-41ef-b521-300964988c11.png)
-
+<img width="500px" src="https://user-images.githubusercontent.com/78900834/180047789-a53daa86-2da8-41ef-b521-300964988c11.png">
 ***
 
 The application provides the following features:
@@ -29,7 +28,7 @@ The application includes 5 sections:
 4. Bonus Shop
 5. Personal account
 
-![image](https://user-images.githubusercontent.com/78900834/180060081-126ee701-622e-496f-ae71-b9586aa4b717.png)
+<img width="500px" src="https://user-images.githubusercontent.com/78900834/180066715-95e17882-b7fc-44fc-ad31-ecb9128ea7bd.png">
 
 ## How it looks like
 After downloading the application, the authorization page opens.
