@@ -7,6 +7,7 @@ Provides the user with the ability to `add`, `modify` and `delete` their ideas, 
 For `more motivation`, points are awarded for added ideas, which can be exchanged for `sponsored goods`.
 
 <img width="500px" src="https://user-images.githubusercontent.com/78900834/180047789-a53daa86-2da8-41ef-b521-300964988c11.png">
+
 ***
 
 <h2><a  href="https://great-ideas-frontend-deploy.vercel.app/">Live Demo</a></h2>
