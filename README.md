@@ -72,17 +72,13 @@ Frontend-part of the application is written using the Angular framework.
 Backend-the part of the application that allows you to upload photos is written using the Express framework.
 
 ## How to start
-After downloading the project, you need to install the dependencies 
-In the folders for frontend and for serverUnloadImg
+After downloading the project, you need to install the dependencies. 
+You need to write the command while in the frontend, backend/upload-image, backend/db directories
 
 >npm install
 
-To run `frontend`, you need to write the command
+To run, you need to write the command while in the frontend, backend/upload-image, backend/db directories
 
->npm run dev
-
-To run `serverUnloadImg`, you need to write the command
-
->npm run server
+>npm run start
 
 Open your browser at http://localhost:4200/
