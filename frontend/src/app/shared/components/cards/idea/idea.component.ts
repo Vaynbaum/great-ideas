@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Button } from 'src/app/shared/model/button.model';
-import { UrlImgService } from 'src/app/shared/servecies/url-img.service';
+import { UrlImgService } from 'src/app/shared/services/url-img.service';
 import { Idea } from 'src/app/system/shared/models/idea.model';
 
 @Component({

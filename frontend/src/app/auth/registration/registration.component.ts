@@ -9,7 +9,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { Input } from 'src/app/shared/model/input.model';
 import { User } from 'src/app/shared/model/user.model';
-import { UserService } from 'src/app/shared/servecies/user.service';
+import { UserService } from 'src/app/shared/services/user.service';
 
 @Component({
   selector: 'app-registration',

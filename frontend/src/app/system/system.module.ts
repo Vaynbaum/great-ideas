@@ -25,7 +25,7 @@ import { InfoProfileComponent } from '../shared/components/cards/info-profile/in
 import { IdeaComponent } from '../shared/components/cards/idea/idea.component';
 import { SearchPipe } from './shared/pipes/search.pipe';
 import { SearchComponent } from '../shared/components/cards/search/search.component';
-import { UrlImgService } from '../shared/servecies/url-img.service';
+import { UrlImgService } from '../shared/services/url-img.service';
 import { FilterPipe } from './shared/pipes/filter.pipe';
 import { TopPanelComponent } from '../shared/components/cards/top-panel/top-panel.component';
 

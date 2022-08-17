@@ -4,7 +4,7 @@ import { ChartType } from 'angular-google-charts';
 import { GoogleChart } from 'src/app/shared/model/googleCharts.model';
 import { Stat } from 'src/app/shared/model/statistic.model';
 import { User } from 'src/app/shared/model/user.model';
-import { UserService } from 'src/app/shared/servecies/user.service';
+import { UserService } from 'src/app/shared/services/user.service';
 
 type DataToChart = [
   id: string,

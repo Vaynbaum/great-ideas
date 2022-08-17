@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthService } from '../../servecies/auth.service';
+import { AuthService } from '../../services/auth.service';
+import { URL_UPLOAD_IMAGE } from '../../urls';
 
 type Buttons = {
   text: string;
@@ -79,7 +80,7 @@ export class HeaderComponent implements OnInit {
     return {
       name: `${this.authService.user?.lastname} ${this.authService.user?.firstname}`,
       url: this.authService.user?.url
-        ? `http://localhost:3002/${this.authService.user?.url}`
+        ? `${URL_UPLOAD_IMAGE}/${this.authService.user?.url}`
         : '../../../../../assets/img/UserImgWhite.png',
     };
   }

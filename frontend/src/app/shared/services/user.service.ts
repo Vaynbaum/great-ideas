@@ -3,7 +3,9 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { User } from '../model/user.model';
 import { map } from 'rxjs/operators';
-const url = 'http://localhost:3000/users';
+import { URL_DB } from '../urls';
+
+const url = `${URL_DB}/users`;
 @Injectable()
 export class UserService {
   constructor(private http: HttpClient) {}

@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { URL_UPLOAD_IMAGE } from '../urls';
 
 @Injectable({
   providedIn: 'root',
@@ -10,7 +11,7 @@ export class UrlImgService {
     return url
       ? (url as string).indexOf('http') > -1
         ? url
-        : `http://localhost:3002/${url}`
+        : `${URL_UPLOAD_IMAGE}/${url}`
       : undefined;
   }
 }

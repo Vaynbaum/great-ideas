@@ -1,8 +1,8 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Stat } from 'src/app/shared/model/statistic.model';
-import { AuthService } from 'src/app/shared/servecies/auth.service';
-import { UrlImgService } from 'src/app/shared/servecies/url-img.service';
+import { AuthService } from 'src/app/shared/services/auth.service';
+import { UrlImgService } from 'src/app/shared/services/url-img.service';
 import { Item } from '../../shared/models/item.model';
 import { ItemService } from '../../shared/services/item.service';
 import { PurchasesService } from '../../shared/services/purchases.service';

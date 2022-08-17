@@ -1,8 +1,8 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Button } from 'src/app/shared/model/button.model';
 import { User } from 'src/app/shared/model/user.model';
-import { AuthService } from 'src/app/shared/servecies/auth.service';
-import { UrlImgService } from 'src/app/shared/servecies/url-img.service';
+import { AuthService } from 'src/app/shared/services/auth.service';
+import { UrlImgService } from 'src/app/shared/services/url-img.service';
 import { Idea } from 'src/app/system/shared/models/idea.model';
 
 @Component({

@@ -1,9 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { URL_DB } from 'src/app/shared/urls';
 import { Idea } from '../models/idea.model';
 
-const URL = 'http://localhost:3000/records';
+const URL = `${URL_DB}/records`;
 @Injectable({
   providedIn: 'root',
 })
@@ -13,7 +14,9 @@ export class IdeaService {
     return this.http.post(URL, record);
   }
   getIdeas(): Observable<Object[]> {
-    return this.http.get<Object[]>(`${URL}?_expand=user&_sort=date&_order=desc`);
+    return this.http.get<Object[]>(
+      `${URL}?_expand=user&_sort=date&_order=desc`
+    );
   }
 
   updateIdea(data: Idea) {

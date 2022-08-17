@@ -3,8 +3,9 @@ import { Title, Meta } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { Stat } from 'src/app/shared/model/statistic.model';
 import { User } from 'src/app/shared/model/user.model';
-import { AuthService } from 'src/app/shared/servecies/auth.service';
-import { UserService } from 'src/app/shared/servecies/user.service';
+import { AuthService } from 'src/app/shared/services/auth.service';
+import { UserService } from 'src/app/shared/services/user.service';
+import { URL_UPLOAD_IMAGE } from 'src/app/shared/urls';
 import { Purchas } from '../shared/models/purchas.model';
 import { PurchasesService } from '../shared/services/purchases.service';
 import { UnloadService } from '../shared/services/unload.service';
@@ -29,7 +30,8 @@ type DisplayInfo = {
   url: string;
   urlUndefined: string;
 };
-const url = 'http://localhost:3002/';
+
+const url = `${URL_UPLOAD_IMAGE}/`;
 @Component({
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.scss'],

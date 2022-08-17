@@ -1,12 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { User } from 'src/app/shared/model/user.model';
-import { AuthService } from 'src/app/shared/servecies/auth.service';
-import { UserService } from 'src/app/shared/servecies/user.service';
+import { AuthService } from 'src/app/shared/services/auth.service';
+import { UserService } from 'src/app/shared/services/user.service';
+import { URL_DB } from 'src/app/shared/urls';
 import { Item } from '../models/item.model';
 import { Purchas } from '../models/purchas.model';
 import { ItemService } from './item.service';
-const URL = 'http://localhost:3000/purchases';
+
+const URL = `${URL_DB}/purchases`;
 @Injectable({
   providedIn: 'root',
 })

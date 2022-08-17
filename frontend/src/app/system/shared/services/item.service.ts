@@ -1,9 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { URL_DB } from 'src/app/shared/urls';
 import { Item } from '../models/item.model';
 import { TypeItem } from '../models/typeItem.model';
-const URL = 'http://localhost:3000/items';
+
+const URL = `${URL_DB}/items`;
 @Injectable({
   providedIn: 'root',
 })

@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { Filter } from 'src/app/shared/model/filter.model';
 import { User } from 'src/app/shared/model/user.model';
-import { AuthService } from 'src/app/shared/servecies/auth.service';
-import { ToggleService } from 'src/app/shared/servecies/toggle.service';
-import { UserService } from 'src/app/shared/servecies/user.service';
+import { AuthService } from 'src/app/shared/services/auth.service';
+import { ToggleService } from 'src/app/shared/services/toggle.service';
+import { UserService } from 'src/app/shared/services/user.service';
 import { Idea } from '../shared/models/idea.model';
 import { IdeaService } from '../shared/services/idea.service';
 

@@ -4,8 +4,8 @@ import { Title, Meta } from '@angular/platform-browser';
 import { Input } from 'src/app/shared/model/input.model';
 import { Message } from 'src/app/shared/model/message.model';
 import { User } from 'src/app/shared/model/user.model';
-import { AuthService } from 'src/app/shared/servecies/auth.service';
-import { UserService } from 'src/app/shared/servecies/user.service';
+import { AuthService } from 'src/app/shared/services/auth.service';
+import { UserService } from 'src/app/shared/services/user.service';
 
 @Component({
   selector: 'app-edit-account',

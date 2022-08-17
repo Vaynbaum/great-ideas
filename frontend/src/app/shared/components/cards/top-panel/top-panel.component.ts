@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ToggleService } from 'src/app/shared/servecies/toggle.service';
+import { ToggleService } from 'src/app/shared/services/toggle.service';
 
 type Toggle = {
   name: string;
