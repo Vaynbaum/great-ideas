@@ -9,9 +9,6 @@ For `more motivation`, points are awarded for added ideas, which can be exchange
 <img width="500px" src="https://user-images.githubusercontent.com/78900834/180047789-a53daa86-2da8-41ef-b521-300964988c11.png">
 
 ***
-
-<h2><a  href="https://great-ideas-frontend-deploy.vercel.app/">Live Demo</a></h2>
-
 The application provides the following features:
 1. Registration and authorization in the system
 2. Creating ideas and editing ideas
